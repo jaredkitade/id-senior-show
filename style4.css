@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+.designer {
+	height: 200px;
+	width: 600px;
+	position: relative;
+}
+.photo img {
+	width:200px;
+	height:auto;
+	position: absolute;
+	top: -10px;
+	z-index: 2;
+	left: 0;
+}
+.photo-border {
+	border:13px solid black;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+	width: 200px;
+	z-index: 3;
+}
+.photo {
+	height:200px;
+	width:200px;
+	position: relative;
+	margin:10px;
+	overflow: hidden;
+}
+.information {
+	width: 0px;
+	padding-top: 10px;
+	border:13px solid #e7e459;
+	height: 200px;
+	background: white;
+	color: white;
+	position: absolute;
+	top:0;
+	left: 180px;
+	z-index: 1;
+	-webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+.name {
+	font-size: 30px;
+	width: 80px;
+	margin-left: 50px;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.body {
+	font-size: 16px;
+	width: 300px;
+	margin-left: 50px;
+	-webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.photo:hover + .information {
+	width: 500px;
+	color: black;
+	transition-delay:.5s;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
