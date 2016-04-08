@@ -33,45 +33,7 @@ body {
     -webkit-transition-delay:.5s;
 	transition-delay:.5s;
 }
-#title {
-	width: 80px;
-	height: auto;
-	position: absolute;
-	left: 130px;
-	top: -57px;
-/*	opacity: 0;
-*/	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-#title1 {
-	width: 80px;
-	height: auto;
-	position: absolute;
-	left: 220px;
-	top: 230px;
-/*	opacity: 0;
-*/	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-/*#title:hover .line {
-	background-color:red;
-	cursor: pointer;
-}*/
-.line {
-	height:150px;
-	width:2px;
-	background: black;
-	position: absolute;
-}
-.lines {
-	height:300px;
-	width:60px;
-	position: relative; 
-}
+\
 #play {
 	width: 0;
 	height: 0;
