@@ -73,16 +73,17 @@
     <div class="ui-widget-content">
       <p>..with the stack option.</p>
     </div> -->
-<div class-'page-container'>
-    <div class='drag' id='play'>
-      <div id='play-button'></div>
-    </div>
+    <div class='page-container'>
 
-    <div class='drag' id='name'>
-      <div class='text' style='width:173px;'>
-        <p>REMOTELY REMOTE</p>
+      <div class='drag' id='play'>
+        <div id='play-button'></div>
       </div>
-    </div>
+
+      <div class='drag' id='name'>
+        <div class='text' style='width:173px;'>
+          <p>REMOTELY REMOTE</p>
+        </div>
+      </div>
 
       <div class='drag' id='date'>
         <div class='text' style='width:95px;'>
@@ -115,20 +116,22 @@
           </div>
         </div>
       </div>
-</div>
-    </body>
-    <script>
-    $(function() {
-      $( "#draggable" ).draggable({ helper: "original" });
-      $( "#draggable2" ).draggable({ opacity: 0.7, helper: "clone" });
-      $( "#draggable3" ).draggable({
-        cursor: "move",
-        cursorAt: { top: -12, left: -20 },
-        helper: function( event ) {
-          return $( "<div class='ui-widget-header'>I'm a custom helper</div>" );
-        }
-      });
-      $( ".drag" ).draggable({ stack: ".drag" });
+
+    </div>
+
+  </body>
+  <script>
+  $(function() {
+    $( "#draggable" ).draggable({ helper: "original" });
+    $( "#draggable2" ).draggable({ opacity: 0.7, helper: "clone" });
+    $( "#draggable3" ).draggable({
+      cursor: "move",
+      cursorAt: { top: -12, left: -20 },
+      helper: function( event ) {
+        return $( "<div class='ui-widget-header'>I'm a custom helper</div>" );
+      }
     });
-    </script>
-    </html>
+    $( ".drag" ).draggable({ stack: ".drag" });
+  });
+  </script>
+  </html>
