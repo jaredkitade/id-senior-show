@@ -144,10 +144,6 @@ body {
 .pages, .pages2 {
 	font-size: 20px;
 }
-.text {
-	font-size: 16px;
-	line-height: 1.4em;
-}
 #about {
 	top: 92px;
 	left: 119px;
@@ -200,9 +196,11 @@ body {
 } 
 .text {
     height:100px;
-    width: 120px;
+    width: 146px;
     margin: 0;
     padding: 0;
+    font-size: 20px;
+    line-height: 1.4em;
 }
 #address {
 	bottom:15px;
