@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Remote</title>
+	<title>Designer Test</title>
 	<meta charset="utf-8"> 
 	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
 </head>
@@ -85,12 +85,12 @@
 </style>
 <body>
 	<div class='designer'>
-		<div class='photo' id="steve">
+		<div class='photo' id="stueve">
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/stueve.jpg'>
 		</div>
 		<div class='left-right'>
-			<div class='slider' id='steve-slider'>
+			<div class='slider' id='stueve-slider'>
 				<div class='name'>Stueve</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -370,12 +370,12 @@
 
 <script>
 	$(document).ready(function(){
-		$('#steve').mouseover(function(){
-			$('#steve-slider').stop().animate({
+		$('#stueve').mouseover(function(){
+			$('#stueve-slider').stop().animate({
 				left: 0    
 			}, 800);                        
 		}).mouseout(function(){
-			$('#steve-slider').stop().animate({
+			$('#stueve-slider').stop().animate({
 				left: '-800px'    
 			}, 800);     
 		});

@@ -4,6 +4,7 @@
 }
 body {
 	font-family:'Helvetica';
+	background: white;
 }
 #logo-container {
 	height: 450px;
@@ -13,6 +14,7 @@ body {
 	top:45%;
 	transform:translate(-50%,-50%);
 }
+/*-------------------------------------------------------REMOTE LETTERS*/
 .remote-container {
 	height: 115px;
 	width:auto;
@@ -33,63 +35,37 @@ body {
     -webkit-transition-delay:.5s;
 	transition-delay:.5s;
 }
-\
-#play {
-	width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 80px solid #e7e459;
-	border-bottom: 50px solid transparent;
+.remote-large a {
+	text-decoration: none;
+	color:black;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition-delay:.5s;
+	transition-delay:.5s;
 }
 .remote div{
     height: 13px;
     width: 13px;
     background-color:black;
     color:#ccc;
+    position: absolute;
+    z-index: 1;
+    pointer-events:none;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-        transition-delay:.5s;
-
-    position: absolute;
-    z-index: 1;
+    transition-delay:.5s;
 }
-.remote2 div{
-    height: 13px;
-    width: 13px;
-    background-color:black;
-    color:#ccc;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    z-index: 1;
-}
-/*.remote div:hover{
-    color:#fff;
-    background-color:#333333;
-    padding-right: 235px;
-
-}*/
+/*-------------------------------------------------------HOVER LETTERS*/
 .remote-large:hover .remote div {
 	padding-right: 248px;
 	background: #e7e459;
 	-webkit-transition-delay:0s;
 	transition-delay:0s;
-
 }
-/*.remote-large:hover .sign {
-	opacity: 1;
-}
-.remote-large:hover #title {
-	opacity: 1;
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}*/
 .remote-large:hover .sign {
 	transform:translate3d(0,-72px,0px);
 	transition-delay:.3s;
@@ -109,7 +85,16 @@ body {
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-.remote-large:hover {
+/*.remote-large:hover {
+	color:#e7e459;
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition-delay:0s;
+	transition-delay:0s;
+}*/
+.remote-large a:hover {
 	color:#e7e459;
 	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -143,6 +128,7 @@ body {
 #hide-t {
 	top:257px;
 }
+/*-------------------------------------------------------LINK DIVS*/
 .sign {
 	background: white;	
 	color:black;
@@ -204,3 +190,17 @@ body {
 	top:350px;
 	left:292px;
 }
+/*-------------------------------------------------------ANIMATING DIVS*/
+#play {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 80px solid #e7e459;
+	border-bottom: 50px solid transparent;
+}
+/*-------------------------------------------------------DRAGGABLE*/
+
+
+
+
+
