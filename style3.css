@@ -7,6 +7,8 @@ body {
 	font-size: 18px;
 	background: white;
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 .page-container {
 	width: 100vw;
@@ -198,29 +200,29 @@ body {
     padding:1em 0; 
   }*/
 .drag {
-    width: 200px;
+    width: 160px;
     height: 100px;
     position: absolute;
 } 
 .text {
     height:100px;
-    width: 146px;
+    width: auto;
     margin: 0;
     padding: 0;
     font-size: 20px;
     line-height: 1.4em;
 }
 #address {
-	bottom:15px;
-	right:15px;
+	bottom:10px;
+	right:25px;
 }
 #date {
-	bottom:15px;
-	left:15px;
+	bottom:10px;
+	left:25px;
 }
 #name {
-	top:15px;
-	left:15px;
+	top:10px;
+	left:25px;
 }
 
 #play {
