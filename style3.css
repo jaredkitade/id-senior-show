@@ -204,7 +204,11 @@ body {
     width: 160px;
     height: 100px;
     position: absolute;
+    cursor: grab;
 } 
+.drag:hover {
+	cursor: grabbing;
+}
 .text {
     height:100px;
     width: auto;
