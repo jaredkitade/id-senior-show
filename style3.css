@@ -4,6 +4,7 @@
 }
 body {
 	font-family:'DIN Next LT W04 Regular';
+	font-size: 18px;
 	background: white;
 }
 #logo-container {
@@ -193,15 +194,29 @@ body {
     padding:1em 0; 
   }*/
 .drag {
-    width: 120px;
+    width: 200px;
     height: 100px;
-  } 
+} 
 .text {
     height:100px;
     width: 120px;
     margin: 0;
     padding: 0;
-  }
+    position: absolute;
+}
+#address {
+	bottom:15px;
+	right:15px;
+}
+#date {
+	bottom:15px;
+	left:15px;
+}
+#name {
+	top:15px;
+	left:15px;
+}
+
 
 #play {
 	width: 0;
@@ -209,6 +224,9 @@ body {
 	border-top: 50px solid transparent;
 	border-left: 80px solid #e7e459;
 	border-bottom: 50px solid transparent;
+	position: absolute;
+	top:200px;
+	left:400px;
 }
 
 .lines-container {
