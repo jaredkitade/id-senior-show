@@ -196,13 +196,13 @@ body {
 .drag {
     width: 200px;
     height: 100px;
+    position: absolute;
 } 
 .text {
     height:100px;
     width: 120px;
     margin: 0;
     padding: 0;
-    position: absolute;
 }
 #address {
 	bottom:15px;
@@ -217,8 +217,11 @@ body {
 	left:15px;
 }
 
-
 #play {
+	top:200px;
+	left:400px;
+}
+#play-button {
 	width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
