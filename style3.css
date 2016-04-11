@@ -193,12 +193,12 @@ body {
     padding:1em 0; 
   }*/
 .drag {
-    width: auto;
+    width: 120px;
     height: 100px;
   } 
 .text {
     height:100px;
-    width: auto;
+    width: 120px;
     margin: 0;
     padding: 0;
   }
