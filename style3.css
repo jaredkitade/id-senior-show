@@ -205,8 +205,14 @@ body {
     height: 100px;
     position: absolute;
     cursor: grab;
+    -webkit-cursor: grab;
+    -moz-cursor: grab;
+	-o-cursor: grabbing;
 } 
 .drag:hover {
+	-webkit-cursor: grabbing;
+	-moz-cursor: grabbing;
+	-o-cursor: grabbing;
 	cursor: grabbing;
 }
 .text {
