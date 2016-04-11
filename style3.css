@@ -187,6 +187,21 @@ body {
 
 
 /*-------------------------------------------------------DRAGGABLE*/
+  /*p { 
+    clear:both; 
+    margin:0; 
+    padding:1em 0; 
+  }*/
+.drag {
+    width: 200px;
+    height: auto;
+  } 
+.text {
+    height:100px;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+  }
 
 #play {
 	width: 0;
