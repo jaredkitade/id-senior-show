@@ -6,6 +6,7 @@ body {
 	font-family:'DIN Next LT W04 Regular';
 	font-size: 18px;
 	background: white;
+	overflow: hidden;
 }
 #logo-container {
 	height: 450px;
