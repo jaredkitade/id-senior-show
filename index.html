@@ -1,29 +1,117 @@
-
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Remote</title>
-	<meta charset="utf-8"> 
-	<link rel="stylesheet" type="text/css" href="style.css"> 
+	<meta charset="utf-8">
+	<title>Remotely Remote</title>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="//fast.fonts.net/jsapi/e2e843dc-3dc4-4174-a53d-ef38a20b87ec.js"></script>
 </head>
-
 <body>
-	<div id='title'>
-		<div id='remote'><strong>Remote</strong></div>
-		<div class='lines'>
-			<div class='line' id='one'></div>
-			<div class='line' id='two'></div>
-			<div class='line' id='three'></div>
-			<div class='line' id='four'></div>
-			<div class='line' id='five'></div>
-			<div class='line' id='six'></div>
-			<div class='line' id='seven'></div>
-			<div class='line' id='eight'></div>
-			<div class='line' id='nine'></div>
-		</div>
-	</div>
-	<div id='play'></div>
-</body>
+	<div class='page-container'>
+		<div id='logo-container'>
+			<div class='remote-container'>
+				<div class='remote-large' id='r' style='margin-right: 215px;'><a href='about.html'>R</a>
+					<div class='sign' id='about'>
+						<div class='pages'>About</div>
+					</div>
+					<div class="remote">
+						<div id='re'></div>
+					</div>
+				</div>
+				<div class='remote-large' style='margin-right:0; pointer-events:none;'>E</div>
+				<div class='hide-div' id='hide-r'></div>
+			</div>
 
+			<div class='remote-container'>
+				<div class='remote-large' id='m'><a href='designer-test.html'>M</a>
+					<div class='sign' id='designers'>
+						<div class='pages'>Designers</div>
+					</div>
+					<div class="remote">
+						<div id='mo'></div>
+					</div>
+				</div>
+				<div class='remote-large' style='margin-right:0; pointer-events:none;'>O</div>
+				<div class='hide-div' id='hide-m'></div>
+			</div>
+
+			<div class='remote-container'>
+				<div class='remote-large' id='t' style='margin-right: 225px;'><a href='work.html'>T</a>
+					<div class='sign' id='donate'>
+						<div class='pages2'>Our Work</div>
+					</div>
+					<div class="remote">
+						<div id='te'></div>
+					</div>
+				</div>
+				<div class='remote-large' style='margin-right:0; pointer-events:none;'>E</div>
+			</div>
+		</div>
+
+
+
+		<div class='drag' id='play' style='width:100px;'>
+			<div id='play-button'></div>
+		</div>
+
+		<div class='drag' id='name' style='width:180px; height:40px;'>
+			<div class='text' style='width:180px;'>
+				REMOTELY REMOTE<br>
+				Industrial Design Senior Show
+			</div>
+		</div>
+
+		<div class='drag' id='date' style='width:95px;'>
+			<div class='text' style='width:95px;'>
+				Thursday<br>
+				May 12<br>
+				6-9PM
+			</div>
+		</div>
+
+		<div class='drag' id='address' style='width:161px;'>
+			<div class='text' style='width:161px;'>
+				Lime Lab<br>
+				135 Mississippi St.<br>
+				San Francisco
+			</div>
+		</div>
+
+		<div class='drag' style='width:80px; height:300px;'>
+			<div class='lines-container'>
+				<div class='lines'>
+					<div class='line' id='one'></div>
+					<div class='line' id='two'></div>
+					<div class='line' id='three'></div>
+					<div class='line' id='four'></div>
+					<div class='line' id='five'></div>
+					<div class='line' id='six'></div>
+					<div class='line' id='seven'></div>
+					<div class='line' id='eight'></div>
+					<div class='line' id='nine'></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+<script>
+$(function() {
+	$( "#draggable" ).draggable({ helper: "original" });
+	$( "#draggable2" ).draggable({ opacity: 0.7, helper: "clone" });
+	$( "#draggable3" ).draggable({
+		cursor: "move",
+		cursorAt: { top: -12, left: -20 },
+		helper: function( event ) {
+			return $( "<div class='ui-widget-header'>I'm a custom helper</div>" );
+		}
+	});
+	$( ".drag" ).draggable({ stack: ".drag" });
+});
+</script>
 </html>
