@@ -6,7 +6,6 @@ body {
 	font-family:'DIN Next LT W04 Regular';
 	font-size: 18px;
 	background: white;
-	overflow: hidden;
 	margin: 0;
 	padding: 0;
 }
@@ -204,16 +203,16 @@ body {
     width: 160px;
     height: 100px;
     position: absolute;
-    cursor: grab;
-    -webkit-cursor: grab;
-    -moz-cursor: grab;
-	-o-cursor: grab;
+    cursor: move;
+    -webkit-cursor: move;
+    -moz-cursor: move;
+	-o-cursor: move;
 } 
 .drag:hover {
-	-webkit-cursor: grabbing;
-	-moz-cursor: grabbing;
-	-o-cursor: grabbing;
-	cursor: grabbing;
+	-webkit-cursor: move;
+	-moz-cursor: move;
+	-o-cursor: move;
+	cursor: move;
 }
 .text {
     height:100px;
@@ -433,7 +432,11 @@ body {
     100% {-webkit-transform: translate(0px, 0px); }
 }
 /*-------------------------------------------------------DESIGNERS*/
-
+#designer-container {
+	margin: 0 auto;
+	width: 800px;
+	height: 100000px;
+}
 .designer {
 	height: 200px;
 	width: 800px;
@@ -458,7 +461,7 @@ body {
 	width:200px;
 	position: relative;
 	overflow: hidden;
-	float: left;
+	float: right;
 }
 .photo-r img {
 	width:200px;
@@ -492,7 +495,15 @@ body {
 	width:600px;
 	margin-left: 200px;
 	position:relative;
-	background-color:white;
+	background-color:black;
+}
+.right-left {
+	overflow:hidden;
+	height:200px;
+	width:600px;
+	margin-right: 200px;
+	position:relative;
+	background-color:black;
 }
 .slider {
 	width:600px;
