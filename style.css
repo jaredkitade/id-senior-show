@@ -225,35 +225,19 @@ body {
 #address {
 	bottom:10px;
 	right:25px;
-	-webkit-cursor: move;
-	-moz-cursor: move;
-	-o-cursor: move;
-	cursor: move;
 }
 #date {
 	bottom:10px;
 	left:25px;
-	-webkit-cursor: move;
-	-moz-cursor: move;
-	-o-cursor: move;
-	cursor: move;
 }
 #name {
 	top:25px;
 	left:25px;
-	-webkit-cursor: move;
-	-moz-cursor: move;
-	-o-cursor: move;
-	cursor: move;
 }
 
 #play {
 	top:200px;
 	left:400px;
-	-webkit-cursor: move;
-	-moz-cursor: move;
-	-o-cursor: move;
-	cursor: move;
 }
 #play-button {
 	width: 0;
@@ -262,10 +246,6 @@ body {
 	border-left: 80px solid #e7e459;
 	border-bottom: 50px solid transparent;
 	position: absolute;
-	-webkit-cursor: move;
-	-moz-cursor: move;
-	-o-cursor: move;
-	cursor: move;
 }
 
 .lines-container {
@@ -274,10 +254,6 @@ body {
 	position: absolute;
 	left: 130px;
 	top: -57px;
-	-webkit-cursor: move;
-	-moz-cursor: move;
-	-o-cursor: move;
-	cursor: move;
 /*	opacity: 0;
 */	-webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
