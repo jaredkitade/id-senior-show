@@ -196,6 +196,8 @@ body {
     width: 160px;
     height: 100px;
     position: fixed;
+   	color: black;
+
 } 
 #menu {
 	top:25px;
@@ -205,23 +207,24 @@ body {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	color: black;
 }
 #menu a {
 	text-decoration: none;
 	margin: 0;
 	padding: 0;
 	color: black;
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 #menu a:hover {
 	color:#e7e459;
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 /*-------------------------------------------------------DRAGGABLE*/
   /*p { 
