@@ -192,18 +192,31 @@ body {
 }
 /*-------------------------------------------------------ANIMATING DIVS*/
 
-
+.info {
+    width: 160px;
+    height: 100px;
+    position: fixed;
+} 
+#menu {
+	top:25px;
+	right:25px;
+}
+#menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+#menu a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
 /*-------------------------------------------------------DRAGGABLE*/
   /*p { 
     clear:both; 
     margin:0; 
     padding:1em 0; 
-  }*/
- .drag2 {
-    width: 160px;
-    height: 100px;
-    position: fixed;
-} 
+  }*/ 
 .drag {
     width: 160px;
     height: 100px;
@@ -239,7 +252,6 @@ body {
 	top:25px;
 	left:25px;
 }
-
 #play {
 	top:200px;
 	left:400px;
@@ -441,6 +453,7 @@ body {
 	margin: 0 auto;
 	width: 800px;
 	height: auto;
+	margin-top:25px;
 }
 .designer {
 	height: 200px;
