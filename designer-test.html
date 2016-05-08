@@ -16,14 +16,36 @@
 
 
 	<style>
-	body {
+/*	body {
 		background: black;
 		padding: 0;
 		margin: 0;
-	}
+	}*/
 	</style>
 </head>
 <body>
+	<div class='drag2' id='name' style='width:180px; height:40px;'>
+			<div class='text' style='width:180px;'>
+				REMOTELY REMOTE<br>
+				Industrial Design Senior Show
+			</div>
+		</div>
+
+		<div class='drag2' id='date' style='width:95px;'>
+			<div class='text' style='width:95px;'>
+				Thursday<br>
+				May 12<br>
+				6-9PM
+			</div>
+		</div>
+
+		<div class='drag2' id='address' style='width:161px;'>
+			<div class='text' style='width:161px;'>
+				Lime Lab<br>
+				135 Mississippi St.<br>
+				San Francisco
+			</div>
+		</div>
 	<div id='designer-container'>
 	<div class='designer'>
 		<div class='photo' id="stueve">
@@ -38,24 +60,36 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='matt'>
+		<div class='photo-r' id='matt'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/matt.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='matt-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='matt-slider'>
 				<div class='name'>Matt</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='larrisa'>
+		<div class='photo' id="maiya">
+<!-- 			<div class='photo-border'></div>
+ -->			<img src='images/maiya.jpg'>
+		</div>
+		<div class='left-right'>
+			<div class='slider' id='maiya-slider'>
+				<div class='name'>Maiya</div>
+				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
+			</div>
+		</div>
+	</div>
+	<div class='designer'>
+		<div class='photo-r' id='larrisa'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/larrisa.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='larrisa-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='larrisa-slider'>
 				<div class='name'>Larrisa</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -74,12 +108,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='fan'>
+		<div class='photo-r' id='fan'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/fan.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='fan-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='fan-slider'>
 				<div class='name'>Fan</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -98,12 +132,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='d-bae'>
+		<div class='photo-r' id='d-bae'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/d-bae.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='d-bae-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='d-bae-slider'>
 				<div class='name'>D-Bae</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -122,12 +156,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='summer'>
+		<div class='photo-r' id='summer'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/summer.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='summer-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='summer-slider'>
 				<div class='name'>Summer</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -146,12 +180,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='rob'>
+		<div class='photo-r' id='rob'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/rob.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='rob-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='rob-slider'>
 				<div class='name'>Rob</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -170,12 +204,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='joyce'>
+		<div class='photo-r' id='joyce'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/joyce.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='joyce-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='joyce-slider'>
 				<div class='name'>Joyce</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -194,12 +228,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='geoffery'>
+		<div class='photo-r' id='geoffery'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/geoffery.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='geoffery-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='geoffery-slider'>
 				<div class='name'>Geoffery</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -218,12 +252,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='evan'>
+		<div class='photo-r' id='evan'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/evan.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='evan-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='evan-slider'>
 				<div class='name'>Evan</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -242,12 +276,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='drew'>
+		<div class='photo-r' id='drew'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/drew.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='drew-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='drew-slider'>
 				<div class='name'>Drew</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -266,12 +300,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='cale'>
+		<div class='photo-r' id='cale'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/cale.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='cale-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='cale-slider'>
 				<div class='name'>Cale</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -290,12 +324,12 @@
 		</div>
 	</div>
 	<div class='designer'>
-		<div class='photo' id='aaron'>
+		<div class='photo-r' id='aaron'>
 <!-- 			<div class='photo-border'></div>
  -->			<img src='images/aaron.jpg'>
 		</div>
-		<div class='left-right'>
-			<div class='slider' id='aaron-slider'>
+		<div class='right-left'>
+			<div class='slider-r' id='aaron-slider'>
 				<div class='name'>Aaron</div>
 				<div class='body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris luctus erat finibus, iaculis justo ac, semper sapien. Integer auctor ac magna ut eleifend. Cras aliquet, elit ac rhoncus cursus, dolor nunc sollicitudin est, ut interdum dui leo nec felis.</div>
 			</div>
@@ -324,11 +358,11 @@
 
 		$('#matt').mouseover(function(){
 			$('#matt-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#matt-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -344,11 +378,11 @@
 
 		$('#larrisa').mouseover(function(){
 			$('#larrisa-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#larrisa-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -364,11 +398,11 @@
 
 		$('#fan').mouseover(function(){
 			$('#fan-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#fan-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -384,11 +418,11 @@
 
 		$('#d-bae').mouseover(function(){
 			$('#d-bae-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#d-bae-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -404,11 +438,11 @@
 
 		$('#summer').mouseover(function(){
 			$('#summer-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#summer-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -424,11 +458,11 @@
 
 		$('#rob').mouseover(function(){
 			$('#rob-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#rob-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -444,11 +478,11 @@
 
 		$('#joyce').mouseover(function(){
 			$('#joyce-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#joyce-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -464,11 +498,11 @@
 
 		$('#geoffery').mouseover(function(){
 			$('#geoffery-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#geoffery-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -484,11 +518,11 @@
 
 		$('#evan').mouseover(function(){
 			$('#evan-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#evan-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -504,11 +538,11 @@
 
 		$('#drew').mouseover(function(){
 			$('#drew-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#drew-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -524,11 +558,11 @@
 
 		$('#cale').mouseover(function(){
 			$('#cale-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#cale-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 
@@ -544,11 +578,11 @@
 
 		$('#aaron').mouseover(function(){
 			$('#aaron-slider').stop().animate({
-				left: 0    
+				right: 0    
 			}, 800);                        
 		}).mouseout(function(){
 			$('#aaron-slider').stop().animate({
-				left: '-800px'    
+				right: '-800px'    
 			}, 800);     
 		});
 

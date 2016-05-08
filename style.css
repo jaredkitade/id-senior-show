@@ -199,6 +199,11 @@ body {
     margin:0; 
     padding:1em 0; 
   }*/
+ .drag2 {
+    width: 160px;
+    height: 100px;
+    position: fixed;
+} 
 .drag {
     width: 160px;
     height: 100px;
@@ -435,11 +440,12 @@ body {
 #designer-container {
 	margin: 0 auto;
 	width: 800px;
-	height: 100000px;
+	height: auto;
 }
 .designer {
 	height: 200px;
 	width: 800px;
+	margin-bottom: 20px;
 }
 .photo {
 	height:200px;
@@ -495,7 +501,6 @@ body {
 	width:600px;
 	margin-left: 200px;
 	position:relative;
-	background-color:black;
 }
 .right-left {
 	overflow:hidden;
@@ -503,7 +508,6 @@ body {
 	width:600px;
 	margin-right: 200px;
 	position:relative;
-	background-color:black;
 }
 .slider {
 	width:600px;
@@ -511,6 +515,17 @@ body {
 	position:absolute;
 	top:0;
 	left:-800px;
+	background-color:white;
+	color:black;
+	padding:10px 20px;
+	border:3px solid #e7e459;
+}
+.slider-r {
+	width:600px;
+	height:200px;
+	position:absolute;
+	top:0;
+	right:-800px;
 	background-color:white;
 	color:black;
 	padding:10px 20px;
