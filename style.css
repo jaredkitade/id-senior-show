@@ -333,6 +333,33 @@ body {
   }
 }
 
+#dot-container {
+		height: 20px;
+		width: 50px;
+		position: relative;
+		line-height: .2em;
+	}
+	.dot {
+		height:4px;
+		width:4px;
+		display: inline-block;
+		margin-right:-2px;
+		background-color: black;
+		border-radius: 50%;
+		animation: flash 1s infinite ease-in-out;
+		-webkit-animation: flash 1s infinite ease-in-out;
+		-moz=animation: flash 1s infinite ease-in-out;
+		-o-animation: flash 1s infinite ease-in-out;
+	}
+	@-webkit-keyframes flash {
+		0% {background-color:white;}
+		50% {background-color:black;}
+		100% {background-color:white;}
+	}
+#dots {
+	top:80%;
+	left:30%;
+}
 /*-------------------------------------------------------INFORMATION*/
 
 .info {
