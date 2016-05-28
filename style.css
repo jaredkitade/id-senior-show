@@ -334,8 +334,8 @@ body {
 }
 
 #dot-container {
-		height: 20px;
-		width: 50px;
+		height: 60px;
+		width: 60px;
 		position: relative;
 		line-height: .2em;
 	}
