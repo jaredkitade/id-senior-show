@@ -205,7 +205,7 @@
 				<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
 				<div class='dot'></div>
 				<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-`			</div>
+			</div>
 		</div>
 
 	</div>
@@ -223,14 +223,14 @@ $(document).ready(function() {
 		}
 	});
 	$( ".drag" ).draggable({ stack: ".drag" });
-	
+
 	$( "#play-button").click(function() {
 		$(".lines").toggleClass('black-bg');
 		$(".text").toggleClass('black-bg');
 		$(".remote-large").toggleClass('black-bg');
 		$(".hide-div").toggleClass('black-bg');
 		$(".spin-circle").toggleClass('black-bg');
-		$(".lines").toggleClass('black-bg');
+		$("body").css('background-color', 'white');
 		$(".lines").toggleClass('black-bg');
 	});
 });
