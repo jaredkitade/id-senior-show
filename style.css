@@ -25,10 +25,10 @@ body {
 	top:45%;
 	transform:translate(-50%,-50%);
 }
-/*-------------------------------------------------------REMOTE LETTERS*/
+/*-------------------------------------------------------FOR BLACK BG VERSION*/
 .black-bg {
 	color:white;
-	background: white;
+	background-color: white;
 	border-color:white;
 }
 /*-------------------------------------------------------REMOTE LETTERS*/
