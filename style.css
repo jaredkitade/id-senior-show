@@ -26,6 +26,12 @@ body {
 	transform:translate(-50%,-50%);
 }
 /*-------------------------------------------------------REMOTE LETTERS*/
+.black-bg {
+	color:white;
+	background: white;
+	border-color:white;
+}
+/*-------------------------------------------------------REMOTE LETTERS*/
 .remote-container {
 	height: 115px;
 	width:auto;

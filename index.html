@@ -205,14 +205,14 @@
 				<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
 				<div class='dot'></div>
 				<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-			</div>
+`			</div>
 		</div>
 
 	</div>
 
 </body>
 <script>
-$(function() {
+$(document).ready(function() {
 	$( "#draggable" ).draggable({ helper: "original" });
 	$( "#draggable2" ).draggable({ opacity: 0.7, helper: "clone" });
 	$( "#draggable3" ).draggable({
@@ -223,6 +223,16 @@ $(function() {
 		}
 	});
 	$( ".drag" ).draggable({ stack: ".drag" });
+	
+	$( "#play-button").click(function() {
+		$(".lines").toggleClass('black-bg');
+		$(".text").toggleClass('black-bg');
+		$(".remote-large").toggleClass('black-bg');
+		$(".hide-div").toggleClass('black-bg');
+		$(".spin-circle").toggleClass('black-bg');
+		$(".lines").toggleClass('black-bg');
+		$(".lines").toggleClass('black-bg');
+	});
 });
 </script>
 </html>
