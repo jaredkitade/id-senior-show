@@ -26,7 +26,10 @@ body {
 	transform:translate(-50%,-50%);
 }
 /*-------------------------------------------------------FOR BLACK BG VERSION*/
-.black-back {
+.black-bg {
+	background: black;
+}
+.black-page {
 	background: black;
 }
 .white-text {
