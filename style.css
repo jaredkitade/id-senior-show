@@ -478,6 +478,8 @@ body {
     	border-left: 80px solid #e7e459;
     	border-bottom: 50px solid transparent;
     	position: absolute;
+    		top:30%;
+    	left:20%;
     }
 
     .lines-container {
