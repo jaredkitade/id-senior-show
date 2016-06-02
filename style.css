@@ -27,25 +27,25 @@ body {
 }
 /*-------------------------------------------------------FOR BLACK BG VERSION*/
 .black-bg {
-	background-color: black;
+	background-color: black !important;
 }
 .black-page {
-	background: black;
+	background: black !important;
 }
 .white-text {
-	color:white;
+	color:white !important;
 }
 .white-border {
-	border-color: white;
+	border-color: white !important;
 }
 .black-text {
-	color:black;
+	color:black !important;
 }
 .white-bg {
-	background: white;
+	background: white !important;
 }
 .black-border {
-	border-color: black;
+	border-color: black !important;
 }
 /*-------------------------------------------------------REMOTE LETTERS*/
 .remote-container {
