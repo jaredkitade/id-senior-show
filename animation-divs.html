@@ -6,122 +6,78 @@
 	<title>Designer Test</title>
 	<meta charset="utf-8">
 	<style>
-	#dot-container {
-		height: 20px;
-		width: 50px;
+	#bar-container {
+		height: 90px;
+		width: 200px;
 		position: relative;
-		line-height: .2em;
 	}
-	.dot {
-		height:4px;
-		width:4px;
-		display: inline-block;
-		margin-right:-2px;
-		background-color: black;
-		border-radius: 50%;
-		animation: flash 1s infinite ease-in-out;
-		-webkit-animation: flash 1s infinite ease-in-out;
-		-moz=animation: flash 1s infinite ease-in-out;
-		-o-animation: flash 1s infinite ease-in-out;
+	.bar {
+		overflow: hidden;
+		height:15px;
+		width:15px;
+		background-color: #afaa45;
+		position: absolute;
+		animation: extend 3s ease-in-out infinite;
+		-webkit-animation: extend 3s ease-in-out infinite;
+		-moz-animation: extend 3s ease-in-out infinite;
+		-o-animation: extend 3s ease-in-out infinite;
 	}
-	@-webkit-keyframes flash {
-		0% {background-color:white;}
-		50% {background-color:black;}
-		100% {background-color:white;}
+	@-webkit-keyframes extend {
+		0% {left:0; width:15px; background-color: #afaa45;}
+		25% {width:80px; background-color: #e7e459;}
+		50% {left:200px; width:15px; background-color: #afaa45;}
+		75% {left:0px; width:80px; background-color: #e7e459;}
+		100% {left:0; width:15px; background-color: #afaa45;	}
+	}
+	/*@-webkit-keyframes extend {
+		0% {left:0;}
+		25% {left:0; right:100px;}
+		50% {right:0;}
+		75% {left:100px; right:0;}
+		100% {left:0;}
+	}*/
+	#bar-one {
+		top:0;
+		left:0;
+		animation-delay:.75s;
+	}
+	#bar-two {
+		top:15px;
+		left:0;
+		animation-delay:.5s;
+	}
+	#bar-three {
+		top:30px;
+		left:0;
+		animation-delay:.25s;
+	}
+	#bar-four {
+		top:45px;
+		left:0;
+		animation-delay:.5s;
+	}
+	#bar-five {
+		top:60px;
+		left:0;
+		animation-delay:.75s;
+	}
+	#bar-six {
+		top:75px;
+		left:0;
+		animation-delay:.75s;
 	}
 	</style>
 </head>
 <body>
-	<div id='dot-container'>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.35s; -moz-animation-delay:.35s; -o-animation-delay:.35s; animation-delay:.35s;'></div>
-		<div class='dot'></div>
-		<div class='dot' style='-webkit-animation-delay:.25s; -moz-animation-delay:.25s; -o-animation-delay:.25s; animation-delay:.25s;'></div>
-		<div class='dot'></div>
+	<div id='bar-container'>
+		<div class='bar' id='bar-one'></div>
+		<div class='bar' id='bar-two'></div>
+		<div class='bar' id='bar-three'></div>	
+		<div class='bar' id='bar-four'></div>
+		<div class='bar' id='bar-five'></div>
 	</div>
+
+	<div id="menu"></div>
+
 </body>
 </html>
