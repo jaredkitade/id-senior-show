@@ -120,7 +120,7 @@ body {
 	transition-delay:0s;
 }
 .remote-large:hover + .remote-large{
-	color:#e7e459;
+	color:#e7e459 !important;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
