@@ -94,7 +94,7 @@ body {
 /*-------------------------------------------------------HOVER LETTERS*/
 .remote-large:hover .remote div {
 	padding-right: 248px;
-	background: #e7e459;
+	background: #e7e459 !important;
 	-webkit-transition-delay:0s;
 	transition-delay:0s;
 }
@@ -111,7 +111,7 @@ body {
 	-moz-transition-delay:.3s;
 }
 .remote-large a:hover {
-	color:#e7e459;
+	color:#e7e459 !important;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
