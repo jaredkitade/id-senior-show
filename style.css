@@ -52,6 +52,7 @@ body {
 	height: 115px;
 	width:auto;
 	margin-bottom: 50px;
+	z-index: 99;
 }
 .remote-large {
 	font-family: 'Helvetica-Bold';
